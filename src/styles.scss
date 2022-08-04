@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Catamaran', sans-serif;;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+input::placeholder {
+  color: #000;
+  opacity: 0.5;  
+}
+
+#root {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.login {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &-card {
+    box-sizing: content-box;
+    height: 400px;
+    width: 280px;
+    padding: 16px;
+    border-radius: 15px;
+  }
+  &__sign {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px;
+    color: #fff;
+    background-color: #845EC2;
+    border: none;
+    border-radius: 5px;
+    
+  }
+
+  &__sign-google {
+    width: 100%;
+    margin-top: 12px;
+    padding: 8px;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__new-account {
+    margin-top: 10px;
+    text-align: center;
+    
+    &-btn {
+      background: none;
+      border: none;
+      font-size: 14px;
+    }
+  }
+}
+
+.login-form {
+  &-holder {
+    margin-top: 20px;
+  
+    &__input {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+  
+      &-value {
+        display: block;
+        width: 100%;
+        padding: 4px;
+        outline: 0;
+        border: 1px solid #eee;
+        background: transparent;
+        width: 100%;
+      }
+  
+      &-button {
+        position: absolute;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        height: 26px;
+        width: 26px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__access {
+    margin-top: 15px;
+    &-remember {
+      display: inline;
+    }
+
+    &-forgot {
+      display: inline;
+      margin-left: 10px;
+    }
+  }
+}
+
+#main-image {
+  height: 700px;
+}
+
+.login:focus {
+  outline: none;
+}
+
+.fa-xmark {
+  color: #d00f0f;
+}
+
+.fa-google {
+  margin-right: 6px;
+}
+
+.checkbox, .btn {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
