@@ -3,11 +3,17 @@ import LoginFormEmail from './LoginFormEmail';
 import LoginFormPass from "./LoginFormPass";
 import LoginFormAccess from "./LoginFormAccess";
 
-const LoginForm = () => {
+const LoginForm = ({email, onEmailChange, password, onPasswordChange}) => {
   return (
     <form id="login-form">
-      <LoginFormEmail/>
-      <LoginFormPass/>
+      <LoginFormEmail
+      email={email} 
+      handleChange={onEmailChange}
+      />
+      <LoginFormPass
+      password={password}
+      handleChange={onPasswordChange}
+      />
       <LoginFormAccess/>
     </form>
   );

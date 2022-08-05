@@ -65,6 +65,7 @@ input::placeholder {
       background: none;
       border: none;
       font-size: 14px;
+      margin-left: 4px;
     }
   }
 }
@@ -102,8 +103,14 @@ input::placeholder {
   }
   &__access {
     margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
     &-remember {
       display: inline;
+
+      & > span {
+        margin-left: 4px;
+      }
     }
 
     &-forgot {

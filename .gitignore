@@ -1,5 +1,2 @@
 node_modules
 dist
-.babelrc
-*.json
-*.config.js

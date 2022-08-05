@@ -1,13 +1,21 @@
 import React from "react";
 import NewAccountBtn from "./NewAccountBtn";
 
-const Sign = () => {
+const logUsersData = (email, password) => {
+  (email === '' || password === '') ? alert('You didn\'t fill in the form properly')
+  : alert(`your email: ${email}; password: ${password}`);
+}
+
+const Sign = ({email, password}) => {
   return (
     <>
-    <button className="login__sign btn">Sign in</button>
+    <button className="login__sign btn" 
+    onClick={() => logUsersData(email, password)}>
+      Log in
+    </button>
     <button className="login__sign-google btn">
       <i className="fa-brands fa-google"></i>
-      Sign in with Google
+      Log in with Google
     </button>
     <NewAccountBtn/>
     </>
